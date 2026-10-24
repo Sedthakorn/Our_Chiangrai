@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Chiang Rai Diary · 6–12 November 2026</title>
+<style>
+:root{--cream:#fff9f1;--paper:#fffdf9;--pink:#e9a9b4;--rose:#b75d75;--deep:#563c43;--muted:#8b777a;--line:#f0dfe0;--sage:#a7b8a0;--shadow:0 12px 34px rgba(120,76,82,.10)}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(135deg,#fff9f1 0%,#fff4f3 52%,#f7f1e8 100%);color:var(--deep);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+button,input{font:inherit} button{cursor:pointer}
+.hero{padding:30px 18px 34px;text-align:center;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"♡";position:absolute;color:#edc4ca;font-size:70px;opacity:.45;top:20px}.hero:before{left:7%}.hero:after{right:7%;top:70px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;color:var(--rose);font-weight:700}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(2.2rem,7vw,4.5rem);line-height:1.04;margin:12px 0;color:#704653}
+.subtitle{color:var(--muted);margin:10px auto 20px;max-width:550px}
+.pill{display:inline-flex;gap:8px;align-items:center;background:#fffdf9;border:1px solid var(--line);border-radius:999px;padding:9px 15px;color:#8e5665;font-size:.9rem}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px 55px}
+.cover-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin-bottom:24px}
+.card{background:rgba(255,253,249,.9);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}
+.cover-photo{min-height:220px;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;background:linear-gradient(135deg,#f6dfe2,#fff2e4 65%,#e8eee2);position:relative}
+.cover-photo .heart{font-size:3rem;color:#bc7384;display:block}
+.cover-photo p{margin:8px 0 0;color:#8e6470}
+.cover-photo img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0;display:none}
+.cover-photo.has-image img{display:block}.cover-photo.has-image .placeholder{display:none}
+.upload{display:inline-flex;align-items:center;gap:6px;margin-top:12px;background:#fffaf6;border:1px solid #e8cdd2;border-radius:999px;padding:8px 12px;color:#8e5665;font-size:.85rem}
+.stats{padding:22px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.stats h2{font-size:1.1rem;margin:0}.statline{display:flex;align-items:center;gap:12px}.staticon{width:38px;height:38px;border-radius:13px;background:#fae7e9;display:grid;place-items:center;font-size:1.1rem;flex-shrink:0}.statline small{display:block;color:var(--muted);margin-top:3px}
+.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:30px 2px 14px}.section-title h2{margin:0;font-size:1.45rem;font-weight:650}.section-title p{margin:0;color:var(--muted);font-size:.9rem}
+.day-layout{display:grid;grid-template-columns:235px 1fr;gap:16px;align-items:start}
+.day-nav{padding:10px;position:sticky;top:12px}
+.day-btn{width:100%;display:flex;align-items:center;gap:12px;border:0;background:transparent;border-radius:16px;padding:12px;text-align:left;color:var(--deep);margin:2px 0}
+.day-btn:hover{background:#fff4f2}.day-btn.active{background:#f7e1e5;color:#8e4c60}
+.day-num{width:43px;height:45px;border-radius:13px;background:#fffaf6;border:1px solid #f0d9dd;display:grid;place-items:center;font-weight:750;font-size:1.05rem;flex-shrink:0}
+.day-btn.active .day-num{background:#bc7185;color:white;border-color:#bc7185}
+.day-label strong{display:block;font-size:.94rem}.day-label small{display:block;color:var(--muted);margin-top:3px;font-size:.75rem}
+.detail{padding:22px}
+.detail-head{display:flex;justify-content:space-between;gap:14px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:16px}
+.detail-head h3{font-size:1.7rem;margin:0 0 5px}.detail-head p{margin:0;color:var(--muted)}
+.tag{white-space:nowrap;border-radius:999px;background:#f4e9dd;padding:7px 10px;color:#8a6b50;font-size:.8rem}
+.note{background:#fff5f3;border:1px solid #f3dfe2;border-radius:15px;padding:12px 14px;color:#8a6269;margin:0 0 17px;font-size:.9rem}
+.timeline{display:flex;flex-direction:column;gap:0}
+.event{display:grid;grid-template-columns:90px 18px 1fr;gap:10px;position:relative;padding-bottom:19px}
+.event:last-child{padding-bottom:2px}
+.time{font-weight:750;font-size:.88rem;color:#a45e72;padding-top:1px}
+.track{position:relative;display:flex;justify-content:center}
+.track:before{content:"";position:absolute;top:7px;bottom:-1px;width:2px;background:#efd3d8}
+.event:last-child .track:before{display:none}
+.dot{width:11px;height:11px;border-radius:50%;background:#c67d8f;border:3px solid #f7e4e7;position:relative;z-index:1}
+.event h4{margin:0 0 4px;font-size:1rem}.event p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.55}
+.event a{color:#a6536b;text-decoration:none}.event a:hover{text-decoration:underline}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+.photo-slot{min-height:126px;border:1px dashed #d9a9b4;border-radius:16px;background:linear-gradient(145deg,#fff7f4,#f9e9eb);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;text-align:center;padding:10px}
+.photo-slot img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0;display:none}
+.photo-slot.has-image img{display:block}.photo-slot.has-image .slot-content{display:none}
+.slot-content{font-size:.82rem;color:#986a75}.slot-content span{display:block;font-size:1.5rem;margin-bottom:5px}
+.photo-slot input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.photo-caption{position:absolute;bottom:0;left:0;right:0;background:rgba(76,42,50,.65);color:white;font-size:.72rem;padding:6px;display:none}
+.photo-slot.has-image .photo-caption{display:block}
+.memory-card{padding:20px;margin-top:20px}.memory-card h3{margin:0 0 7px}.memory-card p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.6}
+footer{text-align:center;color:#9c8285;padding:28px 10px 0;font-family:Georgia,serif;font-style:italic}
+.smallprint{font-size:.78rem;color:#a38d8f;line-height:1.6;margin-top:16px}
+@media(max-width:760px){.cover-grid{grid-template-columns:1fr}.cover-photo{min-height:190px}.day-layout{grid-template-columns:1fr}.day-nav{position:static;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:8px}.day-btn{padding:8px 4px;display:flex;flex-direction:column;gap:5px;text-align:center}.day-num{width:38px;height:38px}.day-label strong{font-size:.78rem}.day-label small{display:none}.detail{padding:16px}.detail-head h3{font-size:1.35rem}.event{grid-template-columns:75px 15px 1fr;gap:8px}.photos{grid-template-columns:repeat(2,1fr)}.photo-slot{min-height:115px}.section-title{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="eyebrow">A little trip, a lot of memories</div>
+  <h1>Our Chiang Rai Diary</h1>
+  <p class="subtitle">เจ็ดวันของเรา · เดินทาง กิน เที่ยว พักผ่อน และเก็บความทรงจำไว้ด้วยกัน</p>
+  <div class="pill">♡ 6–12 พฤศจิกายน 2569 <span>·</span> เชียงราย</div>
+</header>
+<main class="wrap">
+  <section class="cover-grid">
+    <div class="card cover-photo" id="coverBox">
+      <img id="coverPreview" alt="รูปปกของเรา">
+      <div class="placeholder"><span class="heart">♡</span><strong>รูปปกของเราสองคน</strong><p>เพิ่มรูปคู่ที่ชอบที่สุดไว้ตรงนี้</p><label class="upload">＋ เลือกรูปปก<input id="coverInput" type="file" accept="image/*" hidden></label></div>
+    </div>
+    <div class="card stats">
+      <h2>Our little getaway</h2>
+      <div class="statline"><div class="staticon">✈</div><div><strong>6 พ.ย. · เดินทางถึงเชียงราย</strong><small>เที่ยวบินขาไป 11:30–12:55 น.</small></div></div>
+      <div class="statline"><div class="staticon">♡</div><div><strong>7 วันด้วยกัน</strong><small>มีทั้งวันเที่ยวและวันใช้ชีวิตชิล ๆ</small></div></div>
+      <div class="statline"><div class="staticon">✈</div><div><strong>12 พ.ย. · เดินทางกลับ</strong><small>เที่ยวบินขากลับ 14:00–15:20 น.</small></div></div>
+      <p class="smallprint">รูปที่เพิ่มในหน้านี้จะแสดงตัวอย่างบนอุปกรณ์นี้ระหว่างเปิดเว็บ ไฟล์ต้นฉบับไม่ได้ถูกอัปโหลดไปที่ไหน</p>
+    </div>
+  </section>
+
+  <div class="section-title"><div><h2>Our itinerary</h2><p>เลือกวันที่เพื่อเปิดดูแพลนของวันนั้น</p></div><p>♡ 7 days · 1 story</p></div>
+  <section class="day-layout">
+    <nav class="card day-nav" id="dayNav" aria-label="เลือกวันเดินทาง"></nav>
+    <article class="card detail" aria-live="polite">
+      <div class="detail-head"><div><h3 id="dayTitle">ศุกร์ 6 พฤศจิกายน</h3><p id="daySubtitle">วันเดินทาง · เริ่มต้นทริปของเรา</p></div><span class="tag" id="dayTag">Travel day</span></div>
+      <p class="note" id="dayNote"></p>
+      <div class="timeline" id="timeline"></div>
+      <div class="section-title" style="margin-top:25px"><div><h2 style="font-size:1.12rem">Little moments</h2><p>เพิ่มรูปสถานที่หรือรูปของเราสองคน</p></div></div>
+      <div class="photos" id="photos"></div>
+    </article>
+  </section>
+
+  <section class="card memory-card">
+    <h3>♡ A note for us</h3>
+    <p>ทริปนี้ไม่จำเป็นต้องทำทุกอย่างให้สมบูรณ์แบบ แค่ได้ใช้เวลาด้วยกัน ได้ลองอะไรใหม่ ๆ และมีรูปเก็บไว้กลับมาดู ก็เป็นความทรงจำที่ดีแล้ว</p>
+    <p class="smallprint">หมายเหตุ: รายละเอียดวันที่ 7–8 ใช้แผนที่คุยกันไว้ ส่วนวันที่ 9–11 ใส่เฉพาะข้อมูลที่อ่านได้จากโน้ต และเว้นส่วนที่ยังไม่ชัดไว้ให้แก้ไขเพิ่ม</p>
+  </section>
+  <footer>made with love, for our Chiang Rai days ♡</footer>
+</main>
+<script>
+const days = [
+ {key:"6",dow:"ศุกร์",date:"6 พฤศจิกายน",short:"เดินทาง",tag:"Travel day",subtitle:"เริ่มต้นทริปของเรา",note:"วันเดินทางไปเชียงราย · ข้อมูลเที่ยวบินตามโน้ตที่ส่งมา",events:[
+  ["11:30–12:55","บินไปเชียงราย","เที่ยวบินขาไป · ถึงเชียงรายเวลา 12:55 น."],
+  ["หลังถึง","เดินทางเข้าที่พัก","รับกระเป๋า เดินทางไปที่พัก และเช็กอิน"],
+  ["เย็น","พักผ่อนด้วยกัน","ทำกิจวัตรประจำวัน กินข้าว และพักให้เต็มที่"]
+ ],maps:[]},
+ {key:"7",dow:"เสาร์",date:"7 พฤศจิกายน",short:"เที่ยว",tag:"Day 2 · Explore",subtitle:"พิพิธภัณฑ์ · วัดร่องขุ่น · สิงห์ปาร์ค",note:"เส้นทางตามแผนที่เราวางไว้ก่อนหน้า · ระยะทางรวมวันแรก 51.8 กม. โดยประมาณตามระยะที่ให้มา",events:[
+  ["10:00–10:30","หอพักเฮง ๆ → พิพิธภัณฑ์ร่วมสมัย","14.2 กม. · ขี่ประมาณ 25–30 นาที"],
+  ["10:30–11:30","พิพิธภัณฑ์ร่วมสมัย","เที่ยวและถ่ายรูปประมาณ 1 ชั่วโมง"],
+  ["11:30–12:10","พิพิธภัณฑ์ → วัดร่องขุ่น","20.3 กม. · ขี่ประมาณ 35–40 นาที"],
+  ["12:10–13:00","วัดร่องขุ่น","เที่ยวชมประมาณ 50 นาที"],
+  ["13:00–13:40","พักกินข้าวกลางวัน","เผื่อเวลาประมาณ 40 นาที"],
+  ["13:40–13:55","วัดร่องขุ่น → สิงห์ปาร์ค","6.3 กม. · ขี่ประมาณ 15 นาที"],
+  ["13:55–16:15","สิงห์ปาร์ค","เที่ยวประมาณ 2 ชั่วโมง 20 นาที"],
+  ["16:15–16:45","สิงห์ปาร์ค → สิรินฟาร์ม","11 กม. · ขี่ประมาณ 20–30 นาที"],
+  ["16:45 เป็นต้นไป","เช็กอินสิรินฟาร์ม","พักผ่อน กินข้าวเย็น และพักค้างคืน"]
+ ],maps:["พิพิธภัณฑ์ศิลปะร่วมสมัย เชียงราย","วัดร่องขุ่น เชียงราย","สิงห์ปาร์ค เชียงราย","สิรินฟาร์ม เชียงราย"]},
+ {key:"8",dow:"อาทิตย์",date:"8 พฤศจิกายน",short:"ลิไข่",tag:"Day 3 · Nature",subtitle:"นาขั้นบันไดลิไข่",note:"ใช้แผนที่คุยกันไว้ก่อนหน้า · เวลาเดินทางจริงอาจเปลี่ยนตามเส้นทางและสภาพถนน",events:[
+  ["07:30–08:00","ตื่นนอนและกินอาหารเช้า","ประมาณ 30 นาที"],
+  ["08:00–08:15","เตรียมตัวและตรวจรถ","ประมาณ 15 นาที"],
+  ["08:15–09:30","สิรินฟาร์ม → นาขั้นบันไดลิไข่","39.6 กม. · ขี่ประมาณ 1 ชั่วโมง–1 ชั่วโมง 15 นาที"],
+  ["09:30–11:30","นาขั้นบันไดลิไข่","เที่ยว เดินชม และถ่ายรูปประมาณ 2 ชั่วโมง"],
+  ["11:30 เป็นต้นไป","กินข้าวและเดินทางต่อ","เติมแผนขากลับหรือกิจกรรมเพิ่มเติมภายหลัง"]
+ ],maps:["นาขั้นบันไดลิไข่ เชียงราย"]},
+ {key:"9",dow:"จันทร์",date:"9 พฤศจิกายน",short:"เดินกาด",tag:"Slow day",subtitle:"ใช้ชีวิตในเชียงรายด้วยกัน",note:"สรุปจากโน้ต: ถ้ามีรถ/อยากออกไปไหนก็ไปตามใจชอบ และมีไอเดียพาไปเดินกาด · รายละเอียดเวลาแก้ไขเพิ่มได้",events:[
+  ["เช้า","ตื่นช้า ๆ / พักผ่อน","ยังไม่ได้กำหนดเวลา"],
+  ["กลางวัน","เลือกกิจกรรมตามใจ","คาเฟ่ เดินเล่น หรือพักอยู่ด้วยกัน"],
+  ["เย็น","พาไปเดินกาด","เลือกกาดและร้านอาหารตามความสะดวก"]
+ ],maps:["ตลาดในเชียงราย"]},
+ {key:"10",dow:"อังคาร",date:"10 พฤศจิกายน",short:"วันของเรา",tag:"Together time",subtitle:"วางแผนทำกิจกรรมด้วยกัน",note:"ในโน้ตระบุให้แพลนทำอะไรด้วยกันและพักผ่อน · เปิดไว้เป็นวันยืดหยุ่น",events:[
+  ["เช้า","เริ่มวันสบาย ๆ","เติมกิจกรรมที่อยากทำด้วยกัน"],
+  ["กลางวัน","กิจกรรมหรือมื้อพิเศษ","ยังไม่ได้กำหนดสถานที่"],
+  ["เย็น","กินข้าวและพักผ่อน","เก็บรูปหรือเขียนบันทึกของวัน"]
+ ],maps:[]},
+ {key:"11",dow:"พุธ",date:"11 พฤศจิกายน",short:"วันของเรา",tag:"Together time",subtitle:"วันสบาย ๆ ก่อนเดินทางกลับ",note:"ในโน้ตระบุให้แพลนทำอะไรด้วยกันและพักผ่อน · ยังไม่ได้กำหนดสถานที่เฉพาะ",events:[
+  ["เช้า","ตื่นและกินข้าวด้วยกัน","กำหนดเวลาได้ตามจริง"],
+  ["กลางวัน","เลือกกิจกรรมที่อยากทำ","เผื่อเวลาเก็บของและเตรียมเดินทาง"],
+  ["เย็น","กินข้าว / เตรียมกระเป๋า","เช็กเที่ยวบินและการเดินทางไปสนามบิน"]
+ ],maps:[]},
+ {key:"12",dow:"พฤหัสบดี",date:"12 พฤศจิกายน",short:"เดินทางกลับ",tag:"Return day",subtitle:"เก็บความทรงจำก่อนกลับ",note:"เที่ยวบินขากลับตามโน้ต: 14:00–15:20 น. ควรเผื่อเวลาเดินทางไปสนามบินและเช็กอิน",events:[
+  ["ช่วงเช้า","เก็บกระเป๋าและเช็กเอาต์","ตรวจของใช้ส่วนตัวและรูปถ่าย"],
+  ["ก่อน 12:00","เดินทางไปสนามบิน","เวลาออกจากที่พักขึ้นอยู่กับระยะทางและการเดินทาง"],
+  ["14:00–15:20","บินกลับ","เที่ยวบินขากลับ · ถึงปลายทางเวลา 15:20 น."]
+ ],maps:[]}
+];
+let active="6";
+const nav=document.getElementById("dayNav");
+const timeline=document.getElementById("timeline");
+const photos=document.getElementById("photos");
+function renderNav(){
+ nav.innerHTML=days.map(d=>`<button class="day-btn ${d.key===active?'active':''}" data-day="${d.key}"><span class="day-num">${d.key}</span><span class="day-label"><strong>${d.short}</strong><small>${d.dow} · พ.ย.</small></span></button>`).join("");
+ nav.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{active=b.dataset.day;renderNav();renderDay()}));
+}
+function renderDay(){
+ const d=days.find(x=>x.key===active);
+ document.getElementById("dayTitle").textContent=`${d.dow} ${d.date}`;
+ document.getElementById("daySubtitle").textContent=d.subtitle;
+ document.getElementById("dayTag").textContent=d.tag;
+ document.getElementById("dayNote").textContent=d.note;
+ timeline.innerHTML=d.events.map(e=>`<div class="event"><div class="time">${e[0]}</div><div class="track"><span class="dot"></span></div><div><h4>${e[1]}</h4><p>${e[2]}</p></div></div>`).join("");
+ const labels=["รูปสถานที่","รูปของเรา","โมเมนต์พิเศษ"];
+ photos.innerHTML=labels.map((label,i)=>`<label class="photo-slot" id="slot-${d.key}-${i}"><img alt="${label}"><span class="slot-content"><span>${i===0?'⌖':i===1?'♡':'✧'}</span>${label}<br><small>แตะเพื่อเพิ่มรูป</small></span><input type="file" accept="image/*" aria-label="เพิ่ม${label}"><span class="photo-caption">${label}</span></label>`).join("");
+ photos.querySelectorAll("input").forEach(input=>input.addEventListener("change",e=>{
+   const file=e.target.files[0]; if(!file)return;
+   const slot=e.target.closest(".photo-slot"),img=slot.querySelector("img");
+   img.src=URL.createObjectURL(file);slot.classList.add("has-image");
+ }));
+}
+document.getElementById("coverInput").addEventListener("change",e=>{
+ const file=e.target.files[0];if(!file)return;
+ document.getElementById("coverPreview").src=URL.createObjectURL(file);
+ document.getElementById("coverBox").classList.add("has-image");
+});
+renderNav();renderDay();
+</script>
+</body>
+</html>
