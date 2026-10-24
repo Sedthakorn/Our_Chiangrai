@@ -1,184 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Our Chiang Rai Diary · 6–12 November 2026</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our Chiang Rai Diary ♡</title>
 <style>
-:root{--cream:#fff9f1;--paper:#fffdf9;--pink:#e9a9b4;--rose:#b75d75;--deep:#563c43;--muted:#8b777a;--line:#f0dfe0;--sage:#a7b8a0;--shadow:0 12px 34px rgba(120,76,82,.10)}
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;background:linear-gradient(135deg,#fff9f1 0%,#fff4f3 52%,#f7f1e8 100%);color:var(--deep);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
-button,input{font:inherit} button{cursor:pointer}
-.hero{padding:30px 18px 34px;text-align:center;position:relative;overflow:hidden}
-.hero:before,.hero:after{content:"♡";position:absolute;color:#edc4ca;font-size:70px;opacity:.45;top:20px}.hero:before{left:7%}.hero:after{right:7%;top:70px}
-.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;color:var(--rose);font-weight:700}
-h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(2.2rem,7vw,4.5rem);line-height:1.04;margin:12px 0;color:#704653}
-.subtitle{color:var(--muted);margin:10px auto 20px;max-width:550px}
-.pill{display:inline-flex;gap:8px;align-items:center;background:#fffdf9;border:1px solid var(--line);border-radius:999px;padding:9px 15px;color:#8e5665;font-size:.9rem}
-.wrap{max-width:1100px;margin:0 auto;padding:0 16px 55px}
-.cover-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin-bottom:24px}
-.card{background:rgba(255,253,249,.9);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}
-.cover-photo{min-height:220px;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;background:linear-gradient(135deg,#f6dfe2,#fff2e4 65%,#e8eee2);position:relative}
-.cover-photo .heart{font-size:3rem;color:#bc7384;display:block}
-.cover-photo p{margin:8px 0 0;color:#8e6470}
-.cover-photo img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0;display:none}
-.cover-photo.has-image img{display:block}.cover-photo.has-image .placeholder{display:none}
-.upload{display:inline-flex;align-items:center;gap:6px;margin-top:12px;background:#fffaf6;border:1px solid #e8cdd2;border-radius:999px;padding:8px 12px;color:#8e5665;font-size:.85rem}
-.stats{padding:22px;display:flex;flex-direction:column;justify-content:center;gap:14px}
-.stats h2{font-size:1.1rem;margin:0}.statline{display:flex;align-items:center;gap:12px}.staticon{width:38px;height:38px;border-radius:13px;background:#fae7e9;display:grid;place-items:center;font-size:1.1rem;flex-shrink:0}.statline small{display:block;color:var(--muted);margin-top:3px}
-.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:30px 2px 14px}.section-title h2{margin:0;font-size:1.45rem;font-weight:650}.section-title p{margin:0;color:var(--muted);font-size:.9rem}
-.day-layout{display:grid;grid-template-columns:235px 1fr;gap:16px;align-items:start}
-.day-nav{padding:10px;position:sticky;top:12px}
-.day-btn{width:100%;display:flex;align-items:center;gap:12px;border:0;background:transparent;border-radius:16px;padding:12px;text-align:left;color:var(--deep);margin:2px 0}
-.day-btn:hover{background:#fff4f2}.day-btn.active{background:#f7e1e5;color:#8e4c60}
-.day-num{width:43px;height:45px;border-radius:13px;background:#fffaf6;border:1px solid #f0d9dd;display:grid;place-items:center;font-weight:750;font-size:1.05rem;flex-shrink:0}
-.day-btn.active .day-num{background:#bc7185;color:white;border-color:#bc7185}
-.day-label strong{display:block;font-size:.94rem}.day-label small{display:block;color:var(--muted);margin-top:3px;font-size:.75rem}
-.detail{padding:22px}
-.detail-head{display:flex;justify-content:space-between;gap:14px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:16px}
-.detail-head h3{font-size:1.7rem;margin:0 0 5px}.detail-head p{margin:0;color:var(--muted)}
-.tag{white-space:nowrap;border-radius:999px;background:#f4e9dd;padding:7px 10px;color:#8a6b50;font-size:.8rem}
-.note{background:#fff5f3;border:1px solid #f3dfe2;border-radius:15px;padding:12px 14px;color:#8a6269;margin:0 0 17px;font-size:.9rem}
-.timeline{display:flex;flex-direction:column;gap:0}
-.event{display:grid;grid-template-columns:90px 18px 1fr;gap:10px;position:relative;padding-bottom:19px}
-.event:last-child{padding-bottom:2px}
-.time{font-weight:750;font-size:.88rem;color:#a45e72;padding-top:1px}
-.track{position:relative;display:flex;justify-content:center}
-.track:before{content:"";position:absolute;top:7px;bottom:-1px;width:2px;background:#efd3d8}
-.event:last-child .track:before{display:none}
-.dot{width:11px;height:11px;border-radius:50%;background:#c67d8f;border:3px solid #f7e4e7;position:relative;z-index:1}
-.event h4{margin:0 0 4px;font-size:1rem}.event p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.55}
-.event a{color:#a6536b;text-decoration:none}.event a:hover{text-decoration:underline}
-.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
-.photo-slot{min-height:126px;border:1px dashed #d9a9b4;border-radius:16px;background:linear-gradient(145deg,#fff7f4,#f9e9eb);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;text-align:center;padding:10px}
-.photo-slot img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0;display:none}
-.photo-slot.has-image img{display:block}.photo-slot.has-image .slot-content{display:none}
-.slot-content{font-size:.82rem;color:#986a75}.slot-content span{display:block;font-size:1.5rem;margin-bottom:5px}
-.photo-slot input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
-.photo-caption{position:absolute;bottom:0;left:0;right:0;background:rgba(76,42,50,.65);color:white;font-size:.72rem;padding:6px;display:none}
-.photo-slot.has-image .photo-caption{display:block}
-.memory-card{padding:20px;margin-top:20px}.memory-card h3{margin:0 0 7px}.memory-card p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.6}
-footer{text-align:center;color:#9c8285;padding:28px 10px 0;font-family:Georgia,serif;font-style:italic}
-.smallprint{font-size:.78rem;color:#a38d8f;line-height:1.6;margin-top:16px}
-@media(max-width:760px){.cover-grid{grid-template-columns:1fr}.cover-photo{min-height:190px}.day-layout{grid-template-columns:1fr}.day-nav{position:static;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:8px}.day-btn{padding:8px 4px;display:flex;flex-direction:column;gap:5px;text-align:center}.day-num{width:38px;height:38px}.day-label strong{font-size:.78rem}.day-label small{display:none}.detail{padding:16px}.detail-head h3{font-size:1.35rem}.event{grid-template-columns:75px 15px 1fr;gap:8px}.photos{grid-template-columns:repeat(2,1fr)}.photo-slot{min-height:115px}.section-title{align-items:start;flex-direction:column}}
+:root{--bg:#fff8f1;--paper:#fffdfa;--pink:#f5e0e5;--rose:#b65d76;--ink:#62434b;--muted:#8f777b;--line:#efdadd}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(140deg,#fff8f1,#fff0f2);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+header{text-align:center;padding:38px 16px 25px}header small{letter-spacing:.16em;color:var(--rose);font-weight:700}h1{font:500 clamp(2.2rem,7vw,4rem)/1.08 Georgia,serif;margin:12px 0}header p{color:var(--muted)}
+main{max-width:1000px;margin:auto;padding:0 15px 50px}.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:0 10px 28px #8c52610d;margin-bottom:16px}
+h2{font-size:1.2rem;margin:0 0 12px}h3{margin:0 0 8px}.muted{color:var(--muted);font-size:.9rem;line-height:1.6}
+input,textarea,button{font:inherit}input,textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:11px;background:#fffdfb;color:var(--ink);margin:5px 0 10px}textarea{min-height:78px;resize:vertical}
+button{border:0;border-radius:999px;background:var(--rose);color:white;padding:10px 15px;cursor:pointer}button.secondary{background:#f6e5e8;color:#884b5d}button:disabled{opacity:.5;cursor:wait}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.row>*{flex:1}.hidden{display:none!important}
+.days{display:flex;gap:7px;overflow:auto;padding:2px 0 12px}.day{min-width:82px;background:#fff;border:1px solid var(--line);color:var(--ink);border-radius:14px;padding:10px}.day.active{background:var(--rose);color:white}
+.event{border-left:2px solid #e8bac5;padding:0 0 17px 14px;margin-left:6px;position:relative}.event:before{content:"";position:absolute;width:9px;height:9px;background:var(--rose);border-radius:50%;left:-6px;top:5px}.event b{display:block}.event p{margin:4px 0;color:var(--muted);font-size:.9rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:10px}.photo{border:1px solid var(--line);border-radius:15px;overflow:hidden;background:#fff5f5}.photo img{width:100%;height:155px;object-fit:cover;display:block}.photo div{padding:9px;font-size:.85rem}.photo button{font-size:.75rem;padding:6px 10px;margin-top:5px}
+.status{border-radius:12px;padding:10px 12px;background:#fff0f2;color:#8c5261;font-size:.88rem;line-height:1.5}.status.ok{background:#edf5ea;color:#426342}.status.error{background:#fff0e8;color:#995329}
+footer{text-align:center;color:var(--muted);padding:18px}
+@media(max-width:600px){.card{padding:16px}.row{display:block}.row button{margin:3px 0}}
 </style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-<header class="hero">
-  <div class="eyebrow">A little trip, a lot of memories</div>
-  <h1>Our Chiang Rai Diary</h1>
-  <p class="subtitle">เจ็ดวันของเรา · เดินทาง กิน เที่ยว พักผ่อน และเก็บความทรงจำไว้ด้วยกัน</p>
-  <div class="pill">♡ 6–12 พฤศจิกายน 2569 <span>·</span> เชียงราย</div>
-</header>
-<main class="wrap">
-  <section class="cover-grid">
-    <div class="card cover-photo" id="coverBox">
-      <img id="coverPreview" alt="รูปปกของเรา">
-      <div class="placeholder"><span class="heart">♡</span><strong>รูปปกของเราสองคน</strong><p>เพิ่มรูปคู่ที่ชอบที่สุดไว้ตรงนี้</p><label class="upload">＋ เลือกรูปปก<input id="coverInput" type="file" accept="image/*" hidden></label></div>
-    </div>
-    <div class="card stats">
-      <h2>Our little getaway</h2>
-      <div class="statline"><div class="staticon">✈</div><div><strong>6 พ.ย. · เดินทางถึงเชียงราย</strong><small>เที่ยวบินขาไป 11:30–12:55 น.</small></div></div>
-      <div class="statline"><div class="staticon">♡</div><div><strong>7 วันด้วยกัน</strong><small>มีทั้งวันเที่ยวและวันใช้ชีวิตชิล ๆ</small></div></div>
-      <div class="statline"><div class="staticon">✈</div><div><strong>12 พ.ย. · เดินทางกลับ</strong><small>เที่ยวบินขากลับ 14:00–15:20 น.</small></div></div>
-      <p class="smallprint">รูปที่เพิ่มในหน้านี้จะแสดงตัวอย่างบนอุปกรณ์นี้ระหว่างเปิดเว็บ ไฟล์ต้นฉบับไม่ได้ถูกอัปโหลดไปที่ไหน</p>
-    </div>
-  </section>
-
-  <div class="section-title"><div><h2>Our itinerary</h2><p>เลือกวันที่เพื่อเปิดดูแพลนของวันนั้น</p></div><p>♡ 7 days · 1 story</p></div>
-  <section class="day-layout">
-    <nav class="card day-nav" id="dayNav" aria-label="เลือกวันเดินทาง"></nav>
-    <article class="card detail" aria-live="polite">
-      <div class="detail-head"><div><h3 id="dayTitle">ศุกร์ 6 พฤศจิกายน</h3><p id="daySubtitle">วันเดินทาง · เริ่มต้นทริปของเรา</p></div><span class="tag" id="dayTag">Travel day</span></div>
-      <p class="note" id="dayNote"></p>
-      <div class="timeline" id="timeline"></div>
-      <div class="section-title" style="margin-top:25px"><div><h2 style="font-size:1.12rem">Little moments</h2><p>เพิ่มรูปสถานที่หรือรูปของเราสองคน</p></div></div>
-      <div class="photos" id="photos"></div>
-    </article>
-  </section>
-
-  <section class="card memory-card">
-    <h3>♡ A note for us</h3>
-    <p>ทริปนี้ไม่จำเป็นต้องทำทุกอย่างให้สมบูรณ์แบบ แค่ได้ใช้เวลาด้วยกัน ได้ลองอะไรใหม่ ๆ และมีรูปเก็บไว้กลับมาดู ก็เป็นความทรงจำที่ดีแล้ว</p>
-    <p class="smallprint">หมายเหตุ: รายละเอียดวันที่ 7–8 ใช้แผนที่คุยกันไว้ ส่วนวันที่ 9–11 ใส่เฉพาะข้อมูลที่อ่านได้จากโน้ต และเว้นส่วนที่ยังไม่ชัดไว้ให้แก้ไขเพิ่ม</p>
-  </section>
-  <footer>made with love, for our Chiang Rai days ♡</footer>
+<header><small>A LITTLE TRIP, A LOT OF MEMORIES</small><h1>Our Chiang Rai Diary ♡</h1><p>6–12 พฤศจิกายน 2569 · แพลนของเราและความทรงจำที่แชร์กัน</p></header>
+<main>
+ <section class="card" id="setupNotice">
+  <h2>ตั้งค่าเว็บครั้งแรก</h2>
+  <p class="muted">กรอก Project URL และ public/anon key จาก Supabase แล้วบันทึกไว้ในเบราว์เซอร์นี้ จากนั้นสมัครบัญชี 2 คนเพื่อใช้ไดอารี่ร่วมกัน ดูคำแนะนำในไฟล์ SETUP.txt</p>
+  <label>Supabase Project URL</label><input id="projectUrl" placeholder="https://xxxx.supabase.co">
+  <label>Supabase publishable / anon key</label><input id="projectKey" placeholder="sb_publishable_... หรือ anon key">
+  <button id="saveConfig">บันทึกการตั้งค่า</button>
+  <p class="muted">ใช้เฉพาะ public/publishable หรือ anon key ห้ามใส่ service_role key หรือรหัสผ่านฐานข้อมูล</p>
+ </section>
+ <section class="card" id="authCard">
+  <h2>เข้าสู่ไดอารี่ของเรา</h2><p class="muted">ทั้งสองคนสมัครบัญชีใน Supabase Auth ก่อน แล้วใช้บัญชีของตัวเองเข้าสู่เว็บเดียวกัน</p>
+  <label>อีเมล</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com">
+  <label>รหัสผ่าน</label><input id="password" type="password" autocomplete="current-password" placeholder="รหัสผ่านอย่างน้อย 6 ตัวอักษร">
+  <div class="row"><button id="signIn">เข้าสู่ระบบ</button><button class="secondary" id="signUp">สมัครบัญชี</button></div>
+  <p class="muted">หากสมัครแล้วมีอีเมลยืนยัน ให้เปิดอีเมลเพื่อยืนยันก่อนเข้าสู่ระบบ</p>
+ </section>
+ <section class="card hidden" id="appCard">
+  <div class="row"><div><h2>ไดอารี่ของเรา</h2><p class="muted" id="signedIn"></p></div><button class="secondary" id="signOut" style="flex:0 0 auto">ออกจากระบบ</button></div>
+  <div class="status" id="status">กำลังเชื่อมต่อ…</div>
+  <h2 style="margin-top:20px">เลือกวันเดินทาง</h2><div class="days" id="days"></div>
+  <h2 id="selectedDate">วันของเรา</h2><div id="schedule"></div>
+  <hr style="border:0;border-top:1px solid var(--line);margin:20px 0">
+  <h2>เพิ่มบันทึกให้วันนี้</h2>
+  <label>หัวข้อ</label><input id="memoryTitle" placeholder="เช่น คาเฟ่ที่เราแวะ">
+  <label>บันทึก / แก้ไขแพลน</label><textarea id="memoryText" placeholder="เขียนรายละเอียดหรือแผนที่อยากเปลี่ยน..."></textarea>
+  <button id="saveMemory">บันทึกให้เราเห็นทั้งคู่</button>
+  <h2 style="margin-top:24px">เพิ่มรูปคู่หรือรูปสถานที่</h2><p class="muted">รูปจะเก็บใน Storage ออนไลน์ ทั้งสองบัญชีเห็นรูปเดียวกัน</p>
+  <label>คำบรรยายรูป</label><input id="photoCaption" placeholder="เช่น รูปคู่ที่วัดร่องขุ่น">
+  <label>เลือกรูป</label><input id="photoFile" type="file" accept="image/*">
+  <button id="uploadPhoto">อัปโหลดรูปให้เราเห็นทั้งคู่</button>
+  <div class="gallery" id="gallery" style="margin-top:15px"></div>
+  <h2 style="margin-top:24px">บันทึกของวันนี้</h2><div id="memories"></div>
+ </section>
+ <footer>made with love, for our Chiang Rai days ♡</footer>
 </main>
 <script>
-const days = [
- {key:"6",dow:"ศุกร์",date:"6 พฤศจิกายน",short:"เดินทาง",tag:"Travel day",subtitle:"เริ่มต้นทริปของเรา",note:"วันเดินทางไปเชียงราย · ข้อมูลเที่ยวบินตามโน้ตที่ส่งมา",events:[
-  ["11:30–12:55","บินไปเชียงราย","เที่ยวบินขาไป · ถึงเชียงรายเวลา 12:55 น."],
-  ["หลังถึง","เดินทางเข้าที่พัก","รับกระเป๋า เดินทางไปที่พัก และเช็กอิน"],
-  ["เย็น","พักผ่อนด้วยกัน","ทำกิจวัตรประจำวัน กินข้าว และพักให้เต็มที่"]
- ],maps:[]},
- {key:"7",dow:"เสาร์",date:"7 พฤศจิกายน",short:"เที่ยว",tag:"Day 2 · Explore",subtitle:"พิพิธภัณฑ์ · วัดร่องขุ่น · สิงห์ปาร์ค",note:"เส้นทางตามแผนที่เราวางไว้ก่อนหน้า · ระยะทางรวมวันแรก 51.8 กม. โดยประมาณตามระยะที่ให้มา",events:[
-  ["10:00–10:30","หอพักเฮง ๆ → พิพิธภัณฑ์ร่วมสมัย","14.2 กม. · ขี่ประมาณ 25–30 นาที"],
-  ["10:30–11:30","พิพิธภัณฑ์ร่วมสมัย","เที่ยวและถ่ายรูปประมาณ 1 ชั่วโมง"],
-  ["11:30–12:10","พิพิธภัณฑ์ → วัดร่องขุ่น","20.3 กม. · ขี่ประมาณ 35–40 นาที"],
-  ["12:10–13:00","วัดร่องขุ่น","เที่ยวชมประมาณ 50 นาที"],
-  ["13:00–13:40","พักกินข้าวกลางวัน","เผื่อเวลาประมาณ 40 นาที"],
-  ["13:40–13:55","วัดร่องขุ่น → สิงห์ปาร์ค","6.3 กม. · ขี่ประมาณ 15 นาที"],
-  ["13:55–16:15","สิงห์ปาร์ค","เที่ยวประมาณ 2 ชั่วโมง 20 นาที"],
-  ["16:15–16:45","สิงห์ปาร์ค → สิรินฟาร์ม","11 กม. · ขี่ประมาณ 20–30 นาที"],
-  ["16:45 เป็นต้นไป","เช็กอินสิรินฟาร์ม","พักผ่อน กินข้าวเย็น และพักค้างคืน"]
- ],maps:["พิพิธภัณฑ์ศิลปะร่วมสมัย เชียงราย","วัดร่องขุ่น เชียงราย","สิงห์ปาร์ค เชียงราย","สิรินฟาร์ม เชียงราย"]},
- {key:"8",dow:"อาทิตย์",date:"8 พฤศจิกายน",short:"ลิไข่",tag:"Day 3 · Nature",subtitle:"นาขั้นบันไดลิไข่",note:"ใช้แผนที่คุยกันไว้ก่อนหน้า · เวลาเดินทางจริงอาจเปลี่ยนตามเส้นทางและสภาพถนน",events:[
-  ["07:30–08:00","ตื่นนอนและกินอาหารเช้า","ประมาณ 30 นาที"],
-  ["08:00–08:15","เตรียมตัวและตรวจรถ","ประมาณ 15 นาที"],
-  ["08:15–09:30","สิรินฟาร์ม → นาขั้นบันไดลิไข่","39.6 กม. · ขี่ประมาณ 1 ชั่วโมง–1 ชั่วโมง 15 นาที"],
-  ["09:30–11:30","นาขั้นบันไดลิไข่","เที่ยว เดินชม และถ่ายรูปประมาณ 2 ชั่วโมง"],
-  ["11:30 เป็นต้นไป","กินข้าวและเดินทางต่อ","เติมแผนขากลับหรือกิจกรรมเพิ่มเติมภายหลัง"]
- ],maps:["นาขั้นบันไดลิไข่ เชียงราย"]},
- {key:"9",dow:"จันทร์",date:"9 พฤศจิกายน",short:"เดินกาด",tag:"Slow day",subtitle:"ใช้ชีวิตในเชียงรายด้วยกัน",note:"สรุปจากโน้ต: ถ้ามีรถ/อยากออกไปไหนก็ไปตามใจชอบ และมีไอเดียพาไปเดินกาด · รายละเอียดเวลาแก้ไขเพิ่มได้",events:[
-  ["เช้า","ตื่นช้า ๆ / พักผ่อน","ยังไม่ได้กำหนดเวลา"],
-  ["กลางวัน","เลือกกิจกรรมตามใจ","คาเฟ่ เดินเล่น หรือพักอยู่ด้วยกัน"],
-  ["เย็น","พาไปเดินกาด","เลือกกาดและร้านอาหารตามความสะดวก"]
- ],maps:["ตลาดในเชียงราย"]},
- {key:"10",dow:"อังคาร",date:"10 พฤศจิกายน",short:"วันของเรา",tag:"Together time",subtitle:"วางแผนทำกิจกรรมด้วยกัน",note:"ในโน้ตระบุให้แพลนทำอะไรด้วยกันและพักผ่อน · เปิดไว้เป็นวันยืดหยุ่น",events:[
-  ["เช้า","เริ่มวันสบาย ๆ","เติมกิจกรรมที่อยากทำด้วยกัน"],
-  ["กลางวัน","กิจกรรมหรือมื้อพิเศษ","ยังไม่ได้กำหนดสถานที่"],
-  ["เย็น","กินข้าวและพักผ่อน","เก็บรูปหรือเขียนบันทึกของวัน"]
- ],maps:[]},
- {key:"11",dow:"พุธ",date:"11 พฤศจิกายน",short:"วันของเรา",tag:"Together time",subtitle:"วันสบาย ๆ ก่อนเดินทางกลับ",note:"ในโน้ตระบุให้แพลนทำอะไรด้วยกันและพักผ่อน · ยังไม่ได้กำหนดสถานที่เฉพาะ",events:[
-  ["เช้า","ตื่นและกินข้าวด้วยกัน","กำหนดเวลาได้ตามจริง"],
-  ["กลางวัน","เลือกกิจกรรมที่อยากทำ","เผื่อเวลาเก็บของและเตรียมเดินทาง"],
-  ["เย็น","กินข้าว / เตรียมกระเป๋า","เช็กเที่ยวบินและการเดินทางไปสนามบิน"]
- ],maps:[]},
- {key:"12",dow:"พฤหัสบดี",date:"12 พฤศจิกายน",short:"เดินทางกลับ",tag:"Return day",subtitle:"เก็บความทรงจำก่อนกลับ",note:"เที่ยวบินขากลับตามโน้ต: 14:00–15:20 น. ควรเผื่อเวลาเดินทางไปสนามบินและเช็กอิน",events:[
-  ["ช่วงเช้า","เก็บกระเป๋าและเช็กเอาต์","ตรวจของใช้ส่วนตัวและรูปถ่าย"],
-  ["ก่อน 12:00","เดินทางไปสนามบิน","เวลาออกจากที่พักขึ้นอยู่กับระยะทางและการเดินทาง"],
-  ["14:00–15:20","บินกลับ","เที่ยวบินขากลับ · ถึงปลายทางเวลา 15:20 น."]
- ],maps:[]}
+const $=id=>document.getElementById(id);
+const itinerary=[
+{d:6,name:"ศุกร์ 6 พ.ย.",title:"เดินทางถึงเชียงราย",events:[["11:30–12:55","เที่ยวบินไปเชียงราย","ถึงสนามบิน 12:55 น. ตามข้อมูลที่ให้มา"],["หลังถึง","เข้าที่พัก","รับกระเป๋า เดินทางไปที่พักและพักผ่อน"],["เย็น","กินข้าวด้วยกัน","เติมรายละเอียดภายหลัง"]]},
+{d:7,name:"เสาร์ 7 พ.ย.",title:"พิพิธภัณฑ์ · วัดร่องขุ่น · สิงห์ปาร์ค",events:[["10:00–10:30","หอพักเฮง ๆ → พิพิธภัณฑ์ร่วมสมัย","14.2 กม. · 25–30 นาที"],["10:30–11:30","พิพิธภัณฑ์ร่วมสมัย","เที่ยว 1 ชั่วโมง"],["11:30–12:10","พิพิธภัณฑ์ → วัดร่องขุ่น","20.3 กม. · 35–40 นาที"],["12:10–13:00","วัดร่องขุ่น","เที่ยว 50 นาที"],["13:00–13:40","กินข้าวกลางวัน","40 นาที"],["13:40–13:55","วัดร่องขุ่น → สิงห์ปาร์ค","6.3 กม. · ประมาณ 15 นาที"],["13:55–16:15","สิงห์ปาร์ค","เที่ยว 2 ชม. 20 นาที"],["16:15–16:45","สิงห์ปาร์ค → สิรินฟาร์ม","11 กม. · 20–30 นาที"],["16:45 เป็นต้นไป","เช็กอินสิรินฟาร์ม","พักผ่อนและค้างคืน"]]},
+{d:8,name:"อาทิตย์ 8 พ.ย.",title:"นาขั้นบันไดลิไข่",events:[["07:30–08:00","ตื่นนอนและกินอาหารเช้า","30 นาที"],["08:00–08:15","เตรียมตัวและตรวจรถ","15 นาที"],["08:15–09:30","สิรินฟาร์ม → นาขั้นบันไดลิไข่","39.6 กม. · 1–1 ชม. 15 นาที"],["09:30–11:30","นาขั้นบันไดลิไข่","เที่ยวและถ่ายรูป 2 ชั่วโมง"],["11:30 เป็นต้นไป","กินข้าวและเดินทางต่อ","เติมแผนขากลับภายหลัง"]]},
+{d:9,name:"จันทร์ 9 พ.ย.",title:"เดินกาดและใช้ชีวิตในเชียงราย",events:[["เช้า","พักผ่อน","เวลาและสถานที่ยังปรับได้"],["กลางวัน","เลือกกิจกรรมตามใจ","คาเฟ่ เดินเล่น หรือพักด้วยกัน"],["เย็น","เดินกาด / กินข้าว","เลือกตลาดตามสะดวก"]]},
+{d:10,name:"อังคาร 10 พ.ย.",title:"วันของเรา",events:[["เช้า","เริ่มวันสบาย ๆ","เติมกิจกรรมที่อยากทำด้วยกัน"],["กลางวัน","กิจกรรมหรือมื้อพิเศษ","สถานที่ยังไม่กำหนด"],["เย็น","กินข้าวและพักผ่อน","เก็บรูปและบันทึก"]]},
+{d:11,name:"พุธ 11 พ.ย.",title:"วันสบาย ๆ ก่อนกลับ",events:[["เช้า","กินข้าวด้วยกัน","เวลาเปลี่ยนได้"],["กลางวัน","เลือกกิจกรรมที่อยากทำ","เผื่อเวลาเก็บของ"],["เย็น","เตรียมกระเป๋า","ตรวจเที่ยวบินและการเดินทางไปสนามบิน"]]},
+{d:12,name:"พฤหัสบดี 12 พ.ย.",title:"เดินทางกลับ",events:[["เช้า","เก็บกระเป๋าและเช็กเอาต์","ตรวจของใช้ส่วนตัว"],["ก่อน 12:00","เดินทางไปสนามบิน","เผื่อเวลาเช็กอิน"],["14:00–15:20","เที่ยวบินกลับ","เวลาตามข้อมูลที่ให้มา"]]}
 ];
-let active="6";
-const nav=document.getElementById("dayNav");
-const timeline=document.getElementById("timeline");
-const photos=document.getElementById("photos");
-function renderNav(){
- nav.innerHTML=days.map(d=>`<button class="day-btn ${d.key===active?'active':''}" data-day="${d.key}"><span class="day-num">${d.key}</span><span class="day-label"><strong>${d.short}</strong><small>${d.dow} · พ.ย.</small></span></button>`).join("");
- nav.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{active=b.dataset.day;renderNav();renderDay()}));
-}
-function renderDay(){
- const d=days.find(x=>x.key===active);
- document.getElementById("dayTitle").textContent=`${d.dow} ${d.date}`;
- document.getElementById("daySubtitle").textContent=d.subtitle;
- document.getElementById("dayTag").textContent=d.tag;
- document.getElementById("dayNote").textContent=d.note;
- timeline.innerHTML=d.events.map(e=>`<div class="event"><div class="time">${e[0]}</div><div class="track"><span class="dot"></span></div><div><h4>${e[1]}</h4><p>${e[2]}</p></div></div>`).join("");
- const labels=["รูปสถานที่","รูปของเรา","โมเมนต์พิเศษ"];
- photos.innerHTML=labels.map((label,i)=>`<label class="photo-slot" id="slot-${d.key}-${i}"><img alt="${label}"><span class="slot-content"><span>${i===0?'⌖':i===1?'♡':'✧'}</span>${label}<br><small>แตะเพื่อเพิ่มรูป</small></span><input type="file" accept="image/*" aria-label="เพิ่ม${label}"><span class="photo-caption">${label}</span></label>`).join("");
- photos.querySelectorAll("input").forEach(input=>input.addEventListener("change",e=>{
-   const file=e.target.files[0]; if(!file)return;
-   const slot=e.target.closest(".photo-slot"),img=slot.querySelector("img");
-   img.src=URL.createObjectURL(file);slot.classList.add("has-image");
- }));
-}
-document.getElementById("coverInput").addEventListener("change",e=>{
- const file=e.target.files[0];if(!file)return;
- document.getElementById("coverPreview").src=URL.createObjectURL(file);
- document.getElementById("coverBox").classList.add("has-image");
-});
-renderNav();renderDay();
+let sb=null,user=null,activeDay=6,channel=null;
+function setStatus(msg,type=""){const e=$("status");e.textContent=msg;e.className="status "+type}
+function cfg(){return {url:$("projectUrl").value.trim(),key:$("projectKey").value.trim()}}
+function initClient(){const c=cfg();if(!c.url||!c.key){alert("กรอก Supabase URL และ public/anon key ก่อน");return false}try{sb=window.supabase.createClient(c.url,c.key);return true}catch(e){alert("URL หรือ key ไม่ถูกต้อง");return false}}
+$("saveConfig").onclick=()=>{const c=cfg();if(!c.url.startsWith("https://")||!c.key){alert("กรอก Project URL และ key ให้ครบ");return}localStorage.setItem("cr_url",c.url);localStorage.setItem("cr_key",c.key);if(initClient())setStatus("บันทึกการตั้งค่าแล้ว กรุณาสมัครหรือเข้าสู่ระบบ","ok")};
+$("projectUrl").value=localStorage.getItem("cr_url")||"";$("projectKey").value=localStorage.getItem("cr_key")||"";
+function renderDays(){$("days").innerHTML=itinerary.map(x=>`<button class="day ${x.d===activeDay?"active":""}" data-d="${x.d}">${x.d}<br><small>${x.name.split(" ")[0]}</small></button>`).join("");document.querySelectorAll(".day").forEach(b=>b.onclick=()=>{activeDay=+b.dataset.d;renderDays();renderSchedule();loadShared()})}
+function renderSchedule(){const d=itinerary.find(x=>x.d===activeDay);$("selectedDate").textContent=d.name+" · "+d.title;$("schedule").innerHTML=d.events.map(e=>`<div class="event"><b>${e[0]} · ${e[1]}</b><p>${e[2]}</p></div>`).join("")}
+async function authAction(which){if(!sb&&!initClient())return;const email=$("email").value.trim(),password=$("password").value;if(!email||password.length<6){setStatus("กรอกอีเมลและรหัสผ่านอย่างน้อย 6 ตัวอักษร");return}setStatus("กำลังดำเนินการ…");const r=which==="in"?await sb.auth.signInWithPassword({email,password}):await sb.auth.signUp({email,password});if(r.error){setStatus(r.error.message,"error");return}if(which==="up"&&!r.data.session){setStatus("สมัครสำเร็จ หากระบบส่งอีเมลยืนยัน กรุณากดยืนยันจากอีเมลก่อนเข้าสู่ระบบ","ok");return}user=r.data.user;showApp()}
+$("signIn").onclick=()=>authAction("in");$("signUp").onclick=()=>authAction("up");
+async function showApp(){if(!user)return;$("authCard").classList.add("hidden");$("setupNotice").classList.add("hidden");$("appCard").classList.remove("hidden");$("signedIn").textContent="เข้าสู่ระบบเป็น "+user.email;renderDays();renderSchedule();await loadShared();if(channel)sb.removeChannel(channel);channel=sb.channel("shared-diary").on("postgres_changes",{event:"*",schema:"public",table:"memories"},()=>loadShared()).on("postgres_changes",{event:"*",schema:"public",table:"photos"},()=>loadShared()).subscribe()}
+$("signOut").onclick=async()=>{if(sb)await sb.auth.signOut();user=null;$("appCard").classList.add("hidden");$("authCard").classList.remove("hidden");$("setupNotice").classList.remove("hidden");setStatus("ออกจากระบบแล้ว")};
+async function loadShared(){if(!sb||!user)return;const [m,p]=await Promise.all([sb.from("memories").select("*").eq("day",activeDay).order("created_at",{ascending:false}),sb.from("photos").select("*").eq("day",activeDay).order("created_at",{ascending:false})]);if(m.error||p.error){setStatus("อ่านข้อมูลไม่ได้: "+(m.error?.message||p.error?.message)+" · ตรวจ SQL และ Storage policies ใน SETUP.txt","error");return}
+$("memories").innerHTML=m.data.length?m.data.map(x=>`<div class="card" style="box-shadow:none;margin:8px 0;padding:13px"><b>${esc(x.title||"บันทึก")}</b><p class="muted" style="white-space:pre-wrap">${esc(x.body||"")}</p><small class="muted">${esc(x.author_email||"")}</small> <button class="secondary" data-del-memory="${x.id}">ลบ</button></div>`).join(""):'<p class="muted">ยังไม่มีบันทึกของวันนี้</p>';
+document.querySelectorAll("[data-del-memory]").forEach(b=>b.onclick=()=>deleteMemory(b.dataset.delMemory));
+$("gallery").innerHTML=p.data.length?p.data.map(x=>`<div class="photo"><a href="${x.public_url}" target="_blank" rel="noopener"><img src="${x.public_url}" alt="${esc(x.caption||"รูปความทรงจำ")}"></a><div>${esc(x.caption||"ความทรงจำ")}<br><small>${esc(x.author_email||"")}</small><br><button class="secondary" data-del-photo="${x.id}" data-path="${encodeURIComponent(x.storage_path)}">ลบรูป</button></div></div>`).join(""):'<p class="muted">ยังไม่มีรูปในวันนี้</p>';
+document.querySelectorAll("[data-del-photo]").forEach(b=>b.onclick=()=>deletePhoto(b.dataset.delPhoto,decodeURIComponent(b.dataset.path)));
+setStatus("ซิงก์แล้ว · บันทึกและรูปจะแสดงให้ทั้งสองบัญชีเห็น","ok")}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+$("saveMemory").onclick=async()=>{if(!sb||!user)return;const title=$("memoryTitle").value.trim(),body=$("memoryText").value.trim();if(!title&&!body){alert("ใส่หัวข้อหรือบันทึกก่อน");return}const r=await sb.from("memories").insert({day:activeDay,title,body,author_id:user.id,author_email:user.email});if(r.error){setStatus("บันทึกไม่ได้: "+r.error.message,"error");return}$("memoryTitle").value="";$("memoryText").value="";setStatus("บันทึกแล้ว","ok");await loadShared()};
+$("uploadPhoto").onclick=async()=>{if(!sb||!user)return;const file=$("photoFile").files[0];if(!file){alert("เลือกรูปก่อน");return}if(file.size>8*1024*1024){alert("กรุณาเลือกรูปขนาดไม่เกิน 8 MB");return}if(!file.type.startsWith("image/")){alert("ไฟล์นี้ไม่ใช่รูปภาพ");return}setStatus("กำลังอัปโหลดรูป…");const safe=file.name.replace(/[^a-zA-Z0-9._-]/g,"_");const path=`${activeDay}/${user.id}/${Date.now()}-${safe}`;const up=await sb.storage.from("diary-photos").upload(path,file,{upsert:false,contentType:file.type});if(up.error){setStatus("อัปโหลดไม่สำเร็จ: "+up.error.message,"error");return}const pub=sb.storage.from("diary-photos").getPublicUrl(path).data.publicUrl;const r=await sb.from("photos").insert({day:activeDay,caption:$("photoCaption").value.trim(),storage_path:path,public_url:pub,author_id:user.id,author_email:user.email});if(r.error){setStatus("อัปโหลดไฟล์แล้วแต่บันทึกข้อมูลไม่ได้: "+r.error.message,"error");return}$("photoCaption").value="";$("photoFile").value="";setStatus("อัปโหลดและบันทึกรูปแล้ว","ok");await loadShared()};
+async function deleteMemory(id){if(!confirm("ลบบันทึกนี้ใช่ไหม?"))return;const r=await sb.from("memories").delete().eq("id",id);if(r.error){setStatus("ลบไม่ได้: "+r.error.message,"error");return}await loadShared()}
+async function deletePhoto(id,path){if(!confirm("ลบรูปนี้ออกจากไดอารี่ของเราหรือไม่?"))return;const rm=await sb.storage.from("diary-photos").remove([path]);if(rm.error){setStatus("ลบไฟล์ไม่ได้: "+rm.error.message,"error");return}const r=await sb.from("photos").delete().eq("id",id);if(r.error){setStatus("ลบไฟล์แล้วแต่ลบรายการไม่ได้: "+r.error.message,"error");return}await loadShared()}
+(async()=>{const u=localStorage.getItem("cr_url"),k=localStorage.getItem("cr_key");if(u&&k){$("projectUrl").value=u;$("projectKey").value=k;sb=window.supabase.createClient(u,k);const r=await sb.auth.getUser();if(r.data.user){user=r.data.user;showApp()}}renderDays();renderSchedule()})();
 </script>
-</body>
-</html>
+</body></html>
